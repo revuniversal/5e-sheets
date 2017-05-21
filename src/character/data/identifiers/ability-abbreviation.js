@@ -1,0 +1,5 @@
+const ABILITY_ABBREVIATIONS = [
+  'STR', 'DEX', 'CON', 'WIS', 'INT', 'CHA'
+]
+
+export default ABILITY_ABBREVIATIONS
