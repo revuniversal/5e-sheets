@@ -24,24 +24,29 @@ const SkillRow = styled.div`
   padding-bottom: 0.5em;
 `;
 const ShapeContainer = styled.div`
-  font-size: 1.25em;
   line-height: 1.25em;
+  height: 1.25em;
   width: 1.25em;
+  font-size: 1em;
+  text-align: center;
+  font-weight: bolder;
+  margin: 0 0.2em;
+
+  &:empty {
+    visibility: hidden;
+  }
 `;
+
 // eslint-disable-next-line
 const ProficiencyIndicator = ({ name, proficient }) => (
   <ShapeContainer>
-    {proficient
-      ? <span title={`Proficient in ${name}`}>●</span>
-      : <span>&nbsp;</span>}
+    {proficient ? <span title={`Proficient in ${name}`}>P</span> : ''}
   </ShapeContainer>
 );
 
 const AdvantageIndicator = ({ name, advantage }) => (
   <ShapeContainer>
-    {advantage
-      ? <span title={`Advantage on ${name}`}>★</span>
-      : <span>&nbsp;</span>}
+    {advantage ? <span title={`Advantage on ${name}`}>A</span> : ''}
   </ShapeContainer>
 );
 
