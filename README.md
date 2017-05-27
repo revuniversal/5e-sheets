@@ -46,3 +46,14 @@ const Example = ({character}) => (
         - advantage: boolean
         - proficiency: boolean
         - modifier: number
+
+## Goals
+
+- [ ] Name
+- [ ] Personal Info
+- [x] Ailities and Skills
+- [ ] Background (bond, flaw, etc.)
+- [ ] Inventory
+- [ ] Combat Stats (AC, Speed, HP)
+- [ ] Raw to extended stats converter
+- [ ] Publish to npm
