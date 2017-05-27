@@ -7,7 +7,7 @@ const SkillGroup = styled.div`
   align-items: flex-start;
   width: 14em;
   border: 1px solid #333;
-  border-radius: 0.25em;
+  border-radius: 4px;
   font-size: 0.8em;
   min-height: 12em;
   padding: 0.5em;

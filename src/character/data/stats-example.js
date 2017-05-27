@@ -104,7 +104,9 @@ export const stats = {
   proficiency: 1,
   hp: 13,
   initiative: 14,
-  speed: 30
+  speed: 30,
+  experience: 3885,
+  nextLevel: 315
 };
 
 export default stats;

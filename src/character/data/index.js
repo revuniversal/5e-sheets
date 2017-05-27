@@ -1,8 +1,3 @@
-import { stats } from './stats-example';
-
-const example = {
-  stats,
-  name: 'Fellonius Maximus'
-};
+import example from './example';
 
 export { example };

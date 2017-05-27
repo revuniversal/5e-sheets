@@ -7,15 +7,14 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
 `;
 const AbilityGroup = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 1em;
-  margin: 1em;
+  padding: 0 0 0.5em;
 `;
 
 const Abilities = ({ abilities }) => (
