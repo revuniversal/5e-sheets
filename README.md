@@ -46,7 +46,3 @@ const Example = ({character}) => (
         - advantage: boolean
         - proficiency: boolean
         - modifier: number
-
-
-    - 
-

@@ -1,7 +1,7 @@
-import stats from './character/data/stats-example';
+import { example } from './character/data';
 
 let _state = {
-  character: { stats },
+  character: example,
   characters: []
 };
 let _subscribers = [];
