@@ -27,7 +27,7 @@ const ShapeContainer = styled.div`
   line-height: 1.25em;
   height: 1.25em;
   width: 1.25em;
-  font-size: 1em;
+  font-size: 0.75em;
   text-align: center;
   font-weight: bolder;
   margin: 0 0.2em;
@@ -64,35 +64,41 @@ const SkillModifier = ({ modifier }) => (
 const SkillName = styled.div`
   margin-left: 0.5em;
 `;
+
+const SavingThrow = ({ name, savingThrows }) => (
+  <SkillRow>
+    <AdvantageIndicator
+      name={name + ' saves'}
+      advantage={savingThrows.advantage}
+    />
+    <ProficiencyIndicator
+      name={name + ' saves'}
+      proficient={savingThrows.proficient}
+    />
+    <SkillModifier modifier={savingThrows.modifier} />
+    <SkillName>Saving Throw</SkillName>
+  </SkillRow>
+);
+
+const Skill = ({ skill }) => (
+  <SkillRow key={skill.name}>
+    <AdvantageIndicator
+      name={skill.name + ' checks'}
+      advantage={skill.advantage}
+    />
+    <ProficiencyIndicator
+      name={skill.name + ' checks'}
+      proficient={skill.proficient}
+    />
+    <SkillModifier modifier={skill.modifier} />
+    <SkillName>{skill.name}</SkillName>
+  </SkillRow>
+);
+
 const Skills = ({ name, savingThrows, skills }) => (
   <SkillGroup>
-    <SkillRow>
-      <AdvantageIndicator
-        name={name + ' saves'}
-        advantage={savingThrows.advantage}
-      />
-      <ProficiencyIndicator
-        name={name + ' saves'}
-        proficient={savingThrows.proficient}
-      />
-      <SkillModifier modifier={savingThrows.modifier} />
-      <SkillName>Saving Throw</SkillName>
-    </SkillRow>
-
-    {skills.map(skill => (
-      <SkillRow key={skill.name}>
-        <AdvantageIndicator
-          name={skill.name + ' checks'}
-          advantage={skill.advantage}
-        />
-        <ProficiencyIndicator
-          name={skill.name + ' checks'}
-          proficient={skill.proficient}
-        />
-        <SkillModifier modifier={skill.modifier} />
-        <SkillName>{skill.name}</SkillName>
-      </SkillRow>
-    ))}
+    <SavingThrow name={name} savingThrows={savingThrows} />
+    {skills.map(skill => <Skill skill={skill} />)}
   </SkillGroup>
 );
 
