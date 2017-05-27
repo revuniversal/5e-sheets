@@ -49,11 +49,15 @@ const Example = ({character}) => (
 
 ## Goals
 
+(In no particular order)
+
 - [ ] Name
 - [ ] Personal Info
-- [x] Ailities and Skills
+- [x] Abilities and Skills
+- [ ] Click to roll Skill/Save
 - [ ] Background (bond, flaw, etc.)
 - [ ] Inventory
 - [ ] Combat Stats (AC, Speed, HP)
 - [ ] Raw to extended stats converter
+- [ ] Add tests
 - [ ] Publish to npm
