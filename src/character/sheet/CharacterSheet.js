@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import HorizontalStatBlock from './stats/HorizontalStatBlock';
-import PersonalInfo from './personal/PersonalInfo';
+import BasicInfo from './basic/BasicInfo';
 import Cell from './common/Cell';
 
 const Container = styled.div`
@@ -10,7 +10,7 @@ const Container = styled.div`
 
 const CharacterSheet = ({ character }) => (
   <Container>
-    <PersonalInfo character={character} />
+    <BasicInfo character={character} />
     <div>
       <Cell columns={2}>
         <HorizontalStatBlock stats={character.stats} />
