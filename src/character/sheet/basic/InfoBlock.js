@@ -10,7 +10,7 @@ const Container = styled.div`
 `;
 const CollapsibleCell = styled(Cell)`
   white-space: nowrap;
-  overflow: hidden;
+  overflow-x: hidden;
   text-overflow: ellipsis;
 `;
 

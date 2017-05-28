@@ -7,7 +7,7 @@ const Values = styled.div`
   line-height: 1.8em;
   font-size: 1.4em;
   white-space: nowrap;
-  overflow: hidden;
+  overflow-x: hidden;
   text-overflow: ellipsis;
 `;
 
