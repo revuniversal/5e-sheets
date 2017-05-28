@@ -8,7 +8,8 @@ A geeky experiment using reactjs and styled-components.
 
 ### CharacterSheet
 
-Web-based representation of a DnD 5e character sheet.  This is a work in progress.  Currently, only the abilities and basic info portions are fully fleshed out.
+Web-based representation of a DnD 5e character sheet.
+This is a work in progress, so not everything is fleshed out.
 
 #### Example
 
@@ -49,10 +50,8 @@ const Example = ({character}) => (
 
 ## Goals
 
-(In no particular order)
-
 - [x] Name
-- [x] Personal Info
+- [x] Basic Info
 - [x] Abilities and Skills
 - [ ] Background (bond, flaw, etc.)
 - [ ] Combat Stats (AC, Speed, HP)
