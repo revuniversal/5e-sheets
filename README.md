@@ -8,7 +8,7 @@ A geeky experiment using reactjs and styled-components.
 
 ### CharacterSheet
 
-The root component.  A work in progress.  Currently, only the abilities/skills portion of the character sheet is fully fleshed out.
+Web-based representation of a DnD 5e character sheet.  This is a work in progress.  Currently, only the abilities and basic info portions are fully fleshed out.
 
 #### Example
 
@@ -51,13 +51,13 @@ const Example = ({character}) => (
 
 (In no particular order)
 
-- [ ] Name
-- [ ] Personal Info
+- [x] Name
+- [x] Personal Info
 - [x] Abilities and Skills
-- [ ] Click to roll Skill/Save
 - [ ] Background (bond, flaw, etc.)
-- [ ] Inventory
 - [ ] Combat Stats (AC, Speed, HP)
+- [ ] Inventory
 - [ ] Raw to extended stats converter
+- [ ] Click to roll Skill/Save
 - [ ] Add tests
 - [ ] Publish to npm
