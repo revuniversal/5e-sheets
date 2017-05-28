@@ -27,22 +27,22 @@ const InfoBlock = ({ character }) => (
       <CollapsibleCell columns={6}>Player Name</CollapsibleCell>
     </Labels>
     <Values>
-      <CollapsibleCell columns={3}>
+      <CollapsibleCell columns={4}>
         {character.background.name}
       </CollapsibleCell>
-      <CollapsibleCell columns={3}>{character.race}</CollapsibleCell>
-      <CollapsibleCell columns={3}>
+      <CollapsibleCell columns={4}>{character.race}</CollapsibleCell>
+      <CollapsibleCell columns={2}>
         {character.stats.experience}
       </CollapsibleCell>
-      <CollapsibleCell columns={3}>
+      <CollapsibleCell columns={2}>
         {character.stats.nextLevel}
       </CollapsibleCell>
     </Values>
     <Labels>
-      <CollapsibleCell columns={3}>Background</CollapsibleCell>
-      <CollapsibleCell columns={3}>Race</CollapsibleCell>
-      <CollapsibleCell columns={3}>Experience</CollapsibleCell>
-      <CollapsibleCell columns={3}>Next Level</CollapsibleCell>
+      <CollapsibleCell columns={4}>Background</CollapsibleCell>
+      <CollapsibleCell columns={4}>Race</CollapsibleCell>
+      <CollapsibleCell columns={2}>Experience</CollapsibleCell>
+      <CollapsibleCell columns={2}>Next Level</CollapsibleCell>
     </Labels>
   </Container>
 );
