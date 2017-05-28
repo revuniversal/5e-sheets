@@ -34,6 +34,9 @@ const Values = styled.div`
   height: 1.4em;
   line-height: 1.8em;
   font-size: 1.4em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 const Labels = styled.div`
   text-align: left;
@@ -44,6 +47,15 @@ const Labels = styled.div`
   font-size: 8px;
   border-top: 1px solid ${p => p.theme.colors.primary};
   color: ${p => p.theme.colors.primary};
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
+
+const CollapsibleCell = styled(Cell)`
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 const PersonalInfo = ({ character }) => (
@@ -60,26 +72,32 @@ const PersonalInfo = ({ character }) => (
     </CharacterName>
     <InfoBlock>
       <Values>
-        <Cell columns={6}>
+        <CollapsibleCell columns={6}>
           Level {character.stats.level} {character.stats.class}
-        </Cell>
-        <Cell columns={6}>{character.playerName}</Cell>
+        </CollapsibleCell>
+        <CollapsibleCell columns={6}>{character.playerName}</CollapsibleCell>
       </Values>
       <Labels>
-        <Cell columns={6}>Level and Class</Cell>
-        <Cell columns={6}>Player Name</Cell>
+        <CollapsibleCell columns={6}>Level and Class</CollapsibleCell>
+        <CollapsibleCell columns={6}>Player Name</CollapsibleCell>
       </Labels>
       <Values>
-        <Cell columns={3}>{character.background.name}</Cell>
-        <Cell columns={3}>{character.race}</Cell>
-        <Cell columns={3}>{character.stats.experience}</Cell>
-        <Cell columns={3}>{character.stats.nextLevel}</Cell>
+        <CollapsibleCell columns={3}>
+          {character.background.name}
+        </CollapsibleCell>
+        <CollapsibleCell columns={3}>{character.race}</CollapsibleCell>
+        <CollapsibleCell columns={3}>
+          {character.stats.experience}
+        </CollapsibleCell>
+        <CollapsibleCell columns={3}>
+          {character.stats.nextLevel}
+        </CollapsibleCell>
       </Values>
       <Labels>
-        <Cell columns={3}>Background</Cell>
-        <Cell columns={3}>Race</Cell>
-        <Cell columns={3}>Experience</Cell>
-        <Cell columns={3}>Next Level</Cell>
+        <CollapsibleCell columns={3}>Background</CollapsibleCell>
+        <CollapsibleCell columns={3}>Race</CollapsibleCell>
+        <CollapsibleCell columns={3}>Experience</CollapsibleCell>
+        <CollapsibleCell columns={3}>Next Level</CollapsibleCell>
       </Labels>
     </InfoBlock>
   </Container>
