@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import AbilityScore from './AbilityScore';
-import Skills from './Skills';
+import Skills from '../skills/Skills';
 
 const Container = styled.div`
   display: flex;
@@ -14,7 +14,7 @@ const AbilityGroup = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 0.5em;
+  padding: 0 0 5px;
 `;
 
 const Abilities = ({ abilities }) => (

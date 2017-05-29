@@ -1,21 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
-import HorizontalStatBlock from './stats/HorizontalStatBlock';
+import HorizontalStatBlock from './stats/VerticalStatBlock';
 import BasicInfo from './basic/BasicInfo';
-import Cell from './common/Cell';
+import { FlexRow, FlexCell } from './common';
 
 const Container = styled.div`
   padding: 1vh 1vw;
 `;
 
+const Row = styled(FlexRow)`
+  padding-top: 1vh;
+  &:first-child {
+    padding-top: 0;
+  }
+`;
+
 const CharacterSheet = ({ character }) => (
   <Container>
-    <BasicInfo character={character} />
-    <div>
-      <Cell columns={2}>
+    <Row>
+      <FlexCell columns={12}>
+        <BasicInfo character={character} />
+      </FlexCell>
+    </Row>
+    <Row>
+      <FlexCell columns={3}>
         <HorizontalStatBlock stats={character.stats} />
-      </Cell>
-    </div>
+      </FlexCell>
+    </Row>
   </Container>
 );
 

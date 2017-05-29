@@ -1,11 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FlexRow, FlexCell, Values, Labels } from '../common';
+import { FlexRow, FlexCell, Values, Labels, Box } from '../common';
 
-const Container = styled.div`
-  border: 1px solid ${p => p.theme.colors.primary};
-  border-radius: 0.5em;
-  font-size: 1.2em;
+const Container = styled(Box)`
 `;
 const CollapsibleCell = styled(FlexCell)`
   white-space: nowrap;

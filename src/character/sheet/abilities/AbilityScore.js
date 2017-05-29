@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import getModifier from './get-modifier';
+import getModifier from '../get-modifier';
 
 const Container = styled.div`
   align-self: center;
@@ -8,29 +8,32 @@ const Container = styled.div`
   border: 1px solid ${p => p.theme.colors.primary};
   color: ${p => p.theme.colors.primary};
   border-radius: 4px;
-  width: 7em;
+  width: 70px;
   text-align: center;
   z-index: 1;
-  margin-top: -1em;
+  margin-top: -10px;
 `;
+
 const NameContainer = styled.div`
   border-bottom: 1px solid ${p => p.theme.colors.primary};
   padding: 4px;
 `;
+
 const ModifierContainer = styled.div`
   padding: 8px;
-  font-size: 2em;
+  font-size: 20px;
 `;
+
 const ScoreContainer = styled.div`
   background: ${p => p.theme.colors.background};
   color: ${p => p.theme.colors.primary};
   border: 1px solid ${p => p.theme.colors.primary};
   border-radius: 50%;
   margin: 0 auto;
-  width: 2.5em;
-  height: 2.5em;
-  line-height: 2.5em;
-  margin-bottom: -1.25em;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  margin-bottom: -12.5px;
   text-align: center;
 `;
 

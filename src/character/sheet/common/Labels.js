@@ -4,8 +4,8 @@ const Labels = styled.div`
   text-align: left;
   padding: 0 12px 0;
   margin: 3px 0 2px;
-  height: 1em;
-  line-height: 1em;
+  height: 10px;
+  line-height: 10px;
   font-size: 8px;
   border-top: 1px solid ${p => p.theme.colors.primary};
   color: ${p => p.theme.colors.primary};
