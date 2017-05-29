@@ -5,7 +5,6 @@ import { Values, Labels } from '../common';
 const Container = styled.div`
   text-align: left;
   font-size: 1.6em;
-  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;

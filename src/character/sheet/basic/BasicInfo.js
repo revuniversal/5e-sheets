@@ -1,21 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
+import { FlexRow, FlexCell } from '../common';
 import CharacterName from './CharacterName';
 import InfoBlock from './InfoBlock';
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  font-size: 1em;
-`;
-
 const PersonalInfo = ({ character }) => (
-  <Container>
-    <CharacterName character={character} />
-    <InfoBlock character={character} />
-  </Container>
+  <FlexRow>
+    <FlexCell columns={3}>
+      <CharacterName character={character} />
+    </FlexCell>
+    <FlexCell columns={9}>
+      <InfoBlock character={character} />
+    </FlexCell>
+  </FlexRow>
 );
 
 export default PersonalInfo;
