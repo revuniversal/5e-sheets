@@ -38,15 +38,17 @@ const Example = ({character}) => (
       - abbreviation: string
       - score: number
       - modifier: number
-      - savingThrows:
-        - advantage: boolean
-        - proficiency: boolean
-        - modifier: number
-      - skills: array:
-        - name: string
-        - advantage: boolean
-        - proficiency: boolean
-        - modifier: number
+    - skills: array:
+      - name: string
+      - advantage: boolean
+      - proficiency: boolean
+      - modifier: number
+      - ability: string
+    - savingThrows:
+      - ability: string
+      - advantage: boolean
+      - proficiency: boolean
+      - modifier: number
 
 ## Goals
 
