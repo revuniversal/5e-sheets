@@ -103,7 +103,9 @@ export const stats = {
   level: 3,
   proficiency: 1,
   hp: 13,
-  initiative: 14,
+  maxHp: 13,
+  armorClass: 15,
+  initiative: 1,
   speed: 30,
   experience: 3885,
   nextLevel: 315
