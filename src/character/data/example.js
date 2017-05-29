@@ -7,6 +7,7 @@ const example = {
   background: {
     name: 'Urchin'
   },
+  inspiration: 0,
   stats
 };
 

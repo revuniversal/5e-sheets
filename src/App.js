@@ -1,10 +1,10 @@
 import React from 'react';
-import CharacterSheet from './character/sheet/CharacterSheet';
+import BasicSheet from './character/sheet/BasicSheet';
 
 const App = ({ character }) => (
   <div className="container">
     <div className="App">
-      <CharacterSheet character={character} />
+      <BasicSheet character={character} />
     </div>
   </div>
 );
