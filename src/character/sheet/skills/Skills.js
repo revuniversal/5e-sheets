@@ -5,14 +5,14 @@ const SkillGroup = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 14em;
+  width: 140px;
   border: 1px solid #333;
   border-radius: 4px;
-  font-size: 0.8em;
-  min-height: 12em;
-  padding: 0.5em;
-  padding-left: 5.5em;
-  margin-left: -4.5em;
+  font-size: 8px;
+  min-height: 120px;
+  padding: 5px;
+  padding-left: 55px;
+  margin-left: -45px;
   background: ${p => p.theme.colors.background};
   color: ${p => p.theme.colors.foreground};
 `;
@@ -21,16 +21,16 @@ const SkillRow = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 0.5em;
+  padding-bottom: 5px;
 `;
 const ShapeContainer = styled.div`
-  line-height: 1.25em;
-  height: 1.25em;
-  width: 1.25em;
-  font-size: 0.75em;
+  line-height: 12.5px;
+  height: 12.5px;
+  width: 12.5px;
+  font-size: 7.5px;
   text-align: center;
   font-weight: bolder;
-  margin: 0 0.2em;
+  margin: 0 2px;
 
   &:empty {
     visibility: hidden;
@@ -51,8 +51,8 @@ const AdvantageIndicator = ({ name, advantage }) => (
 );
 
 const SkillModifierContainer = styled.div`
-  margin: 0 0.5em 0 0.75em;
-  borderBottom: 0.1em solid ${p => p.theme.colors.foreground};
+  margin: 0 5px 0 7.5px;
+  borderBottom: 1px solid ${p => p.theme.colors.foreground};
 `;
 
 const SkillModifier = ({ modifier }) => (
@@ -62,7 +62,7 @@ const SkillModifier = ({ modifier }) => (
 );
 
 const SkillName = styled.div`
-  margin-left: 0.5em;
+  margin-left: 5px;
 `;
 
 const SavingThrow = ({ name, savingThrows }) => (

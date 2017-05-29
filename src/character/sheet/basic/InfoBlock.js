@@ -1,14 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Cell, Values, Labels } from '../common';
+import { FlexRow, FlexCell, Values, Labels, Box } from '../common';
 
-const Container = styled.div`
-  width: 70%;
-  border: 1px solid ${p => p.theme.colors.primary};
-  border-radius: 0.5em;
-  font-size: 1.2em;
+const Container = styled(Box)`
 `;
-const CollapsibleCell = styled(Cell)`
+const CollapsibleCell = styled(FlexCell)`
   white-space: nowrap;
   overflow-x: hidden;
   text-overflow: ellipsis;
@@ -16,34 +12,74 @@ const CollapsibleCell = styled(Cell)`
 
 const InfoBlock = ({ character }) => (
   <Container>
-    <Values>
+    <FlexRow>
       <CollapsibleCell columns={6}>
-        Level {character.stats.level} {character.stats.class}
+        <Values>
+          Level {character.stats.level} {character.stats.class}
+        </Values>
       </CollapsibleCell>
-      <CollapsibleCell columns={6}>{character.playerName}</CollapsibleCell>
-    </Values>
-    <Labels>
-      <CollapsibleCell columns={6}>Level and Class</CollapsibleCell>
-      <CollapsibleCell columns={6}>Player Name</CollapsibleCell>
-    </Labels>
-    <Values>
+      <CollapsibleCell columns={6}>
+        <Values>
+          {character.playerName}
+        </Values>
+      </CollapsibleCell>
+    </FlexRow>
+    <FlexRow>
+      <CollapsibleCell columns={6}>
+        <Labels>
+          Level and Class
+        </Labels>
+      </CollapsibleCell>
+      <CollapsibleCell columns={6}>
+        <Labels>
+          Player Name
+        </Labels>
+      </CollapsibleCell>
+    </FlexRow>
+    <FlexRow>
       <CollapsibleCell columns={4}>
-        {character.background.name}
+        <Values>
+          {character.background.name}
+        </Values>
       </CollapsibleCell>
-      <CollapsibleCell columns={4}>{character.race}</CollapsibleCell>
+      <CollapsibleCell columns={4}>
+        <Values>
+          {character.race}
+        </Values>
+      </CollapsibleCell>
       <CollapsibleCell columns={2}>
-        {character.stats.experience}
+        <Values>
+          {character.stats.experience}
+        </Values>
       </CollapsibleCell>
       <CollapsibleCell columns={2}>
-        {character.stats.nextLevel}
+        <Values>
+          {character.stats.nextLevel}
+        </Values>
       </CollapsibleCell>
-    </Values>
-    <Labels>
-      <CollapsibleCell columns={4}>Background</CollapsibleCell>
-      <CollapsibleCell columns={4}>Race</CollapsibleCell>
-      <CollapsibleCell columns={2}>Experience</CollapsibleCell>
-      <CollapsibleCell columns={2}>Next Level</CollapsibleCell>
-    </Labels>
+    </FlexRow>
+    <FlexRow>
+      <CollapsibleCell columns={4}>
+        <Labels>
+          Background
+        </Labels>
+      </CollapsibleCell>
+      <CollapsibleCell columns={4}>
+        <Labels>
+          Race
+        </Labels>
+      </CollapsibleCell>
+      <CollapsibleCell columns={2}>
+        <Labels>
+          Experience
+        </Labels>
+      </CollapsibleCell>
+      <CollapsibleCell columns={2}>
+        <Labels>
+          Next Level
+        </Labels>
+      </CollapsibleCell>
+    </FlexRow>
   </Container>
 );
 

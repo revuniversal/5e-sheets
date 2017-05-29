@@ -1,18 +1,12 @@
-import React, {Component} from 'react'
-import CharacterSheet from './character/sheet/CharacterSheet'
-import './App.css'
+import React from 'react';
+import BasicSheet from './character/sheet/BasicSheet';
 
-class App extends Component {
-  render() {
-    const character = this.props.character
-    return (
-      <div className="container">
-        <div className="App">
-          <CharacterSheet character={character} />
-        </div>
-      </div>
-    )
-  }
-}
+const App = ({ character }) => (
+  <div className="container">
+    <div className="App">
+      <BasicSheet character={character} />
+    </div>
+  </div>
+);
 
-export default App
+export default App;

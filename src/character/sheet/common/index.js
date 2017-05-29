@@ -1,5 +1,10 @@
-import Cell from './Cell';
-import Values from './Values';
+import Box from './Box';
+import BoxFooter from './BoxFooter';
+import FlexCell from './FlexCell';
+import FlexRow from './FlexRow';
 import Labels from './Labels';
+import Values from './Values';
 
-export { Cell, Values, Labels };
+import displayModifier from './display-modifier';
+
+export { Box, BoxFooter, displayModifier, FlexCell, FlexRow, Labels, Values };
