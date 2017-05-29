@@ -60,3 +60,8 @@ const Example = ({character}) => (
 - [ ] Click to roll Skill/Save
 - [ ] Add tests
 - [ ] Publish to npm
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
