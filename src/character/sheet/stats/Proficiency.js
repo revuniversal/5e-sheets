@@ -1,19 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Box, displayModifier, FlexCell, FlexRow } from '../common';
+import { Box, displayModifier, FlexCell, FlexRow, TinyTitle } from '../common';
 
 const Container = styled(Box)`
   height: 20px;
   line-height: 20px;
 `;
-
-const Title = styled.div`
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 7px;
-  font-weight: bold;
-`;
-
 const Large = styled.div`
   text-align: center;
   font-size: 16px;
@@ -26,7 +18,7 @@ const Proficiency = ({ proficiency }) => (
         <Large>{displayModifier(proficiency)}</Large>
       </FlexCell>
       <FlexCell columns={9}>
-        <Title>Proficiency Bonus</Title>
+        <TinyTitle>Proficiency Bonus</TinyTitle>
       </FlexCell>
     </FlexRow>
   </Container>
