@@ -5,6 +5,7 @@ import BasicInfo from './basic/BasicInfo';
 import VerticalAbilityBlock from './abilities/VerticalAbilityBlock';
 import Inspiration from './stats/Inspiration';
 import Profiency from './stats/Proficiency';
+import CombatStats from './stats/CombatStats';
 import Saves from './stats/Saves';
 import SkillBlock from './skills/SkillBlock';
 
@@ -35,6 +36,9 @@ const BasicSheet = ({ character }) => (
         <Profiency proficiency={character.stats.proficiency} />
         <Saves character={character} />
         <SkillBlock character={character} />
+      </FlexCell>
+      <FlexCell columns={4}>
+        <CombatStats stats={character.stats} />
       </FlexCell>
     </Row>
   </Container>

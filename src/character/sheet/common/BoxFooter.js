@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const BoxFooter = styled.h3`
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
