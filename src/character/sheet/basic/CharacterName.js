@@ -12,16 +12,20 @@ const Container = styled.div`
   align-content: center;
 `;
 
+const InnerContainer = styled.div`
+  padding: 14px 0;
+`;
+
 const CharacterName = ({ character }) => (
   <Container>
-    <div>
+    <InnerContainer>
       <Values>
         {character.characterName}
       </Values>
       <Labels>
         Character Name
       </Labels>
-    </div>
+    </InnerContainer>
   </Container>
 );
 
