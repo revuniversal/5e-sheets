@@ -11,7 +11,7 @@ const state = store.getState();
 
 render(
   <ThemeProvider theme={theme}>
-    <App character={state.character}/>
+    <App character={state.character} />
   </ThemeProvider>,
   document.getElementById('root')
-)
+);
