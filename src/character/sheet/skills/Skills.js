@@ -52,7 +52,7 @@ const AdvantageIndicator = ({ name, advantage }) => (
 
 const SkillModifierContainer = styled.div`
   margin: 0 5px 0 7.5px;
-  borderBottom: 1px solid ${p => p.theme.colors.foreground};
+  border-bottom: 1px solid ${p => p.theme.colors.foreground};
 `;
 
 const SkillModifier = ({ modifier }) => (
@@ -98,7 +98,9 @@ const Skill = ({ skill }) => (
 const Skills = ({ name, savingThrows, skills }) => (
   <SkillGroup>
     <SavingThrow name={name} savingThrows={savingThrows} />
-    {skills.map(skill => <Skill skill={skill} />)}
+    {skills.map(skill => (
+      <Skill skill={skill} />
+    ))}
   </SkillGroup>
 );
 
