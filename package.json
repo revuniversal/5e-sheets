@@ -1,20 +1,17 @@
 {
   "name": "character-sheet",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "devDependencies": {
-    "chai": "^3.5.0",
-    "enzyme": "^2.7.0",
-    "react-addons-test-utils": "^15.4.1",
-    "react-scripts": "^1.0.2"
+    "react-scripts": "^3.0.1"
   },
   "dependencies": {
-    "chance": "^1.0.4",
-    "firebase": "^3.6.4",
-    "lodash": "^4.17.3",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
-    "styled-components": "^2.0.0"
+    "chance": "^1.0.18",
+    "lodash": "^4.17.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2",
+    "typescript": "^3.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
